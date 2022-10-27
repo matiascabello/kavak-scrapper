@@ -4,24 +4,7 @@ import { sendEmail } from './mailer.js'
 
 export { scrapTask };
 
-let prevScrapping = [{
-    carTitle: ' Fiat Argo 1.8 Precision ',
-    carPrice: ' $ 4.000.000 ',
-    carId: '204456',
-    carStatus: 'Booked'
-  },
-  {
-    carTitle: ' Fiat Argo 1.3 Drive Gse Manual ',
-    carPrice: ' $ 3.250.000 ',
-    carId: '202201',
-    carStatus: 'Booked'
-  },
-  {
-    carTitle: ' Fiat Argo 1.3 Drive Gse Manual ',
-    carPrice: ' $ 3.470.000 ',
-    carId: '205350',
-    carStatus: 'Booked'
-  }];
+let prevScrapping = [];
 
 let currentScrapping = [];
 
