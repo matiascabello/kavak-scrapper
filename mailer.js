@@ -27,7 +27,7 @@ const sendEmail = (cars) => {
         to: process.env.EMAIL_TO, // Change to your recipient
         from: process.env.EMAIL_FROM, // Change to your verified sender
         subject: 'New cars published in Kavak',
-        text: 'and easy to do anywhere, even with Node.js',
+        text: '',
         html: formatHtml(cars),
       }
 
