@@ -16,3 +16,8 @@ cron.schedule('0 0 */12 * *', () => {
     scrapTask(url);
 })
 
+// Cheat to keep Heroku app alive ;)
+
+setInterval(() => {
+    http.get("https://kavak-scrapper.herokuapp.com/");
+  }, 25 * 60 * 1000); // every 25 minutes
