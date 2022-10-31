@@ -2,7 +2,7 @@ import axios from 'axios';
 import cheerio from 'cheerio';
 import { sendEmail } from './mailer.js'
 
-export { scrapTask };
+export { scrapTask, prevScrapping };
 
 let prevScrapping = [];
 
@@ -28,7 +28,7 @@ const scrapTask = async (url) => {
         const regex = /[0-9]\w+$/g;
         const carId = carUrl.match(regex).toString();
         
-        items.push({carTitle, carPrice, carId, carStatus});
+        items.push({carTitle, carPrice, carId, carStatus, carUrl});
         
     });
 
